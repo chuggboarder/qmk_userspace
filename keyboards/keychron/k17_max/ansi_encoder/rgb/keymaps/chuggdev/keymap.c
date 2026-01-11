@@ -25,12 +25,6 @@
 
 
 
-    /* #define MOUSEKEY_INTERVAL 20 */
-    /* #define MOUSEKEY_DELAY 0 */
-    /* #define MOUSEKEY_TIME_TO_MAX 60 */
-    /* #define MOUSEKEY_MAX_SPEED 7 */
-    /* #define MOUSEKEY_WHEEL_DELAY 0 */
-
 
 
 
@@ -69,17 +63,17 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_DOLLAR,   KC_AMPERSAND,     KC_LBRC,     KC_LCBR,     KC_RCBR,     KC_LPRN,     KC_EQL,     KC_ASTR,     KC_RPRN,     KC_PLUS,     KC_RBRC,     KC_EXCLAIM,    KC_HASH,   KC_BSPC,            KC_PGUP,  KC_NUM,   KC_PSLS,  KC_PAST,  KC_PMNS,
         KC_TAB,   KC_SCLN,     KC_COMM,     KC_DOT,     KC_P,     KC_Y,     KC_F,     KC_G,     KC_C,     KC_R,     KC_L,     KC_SLSH,    KC_AT,  KC_BSLS,            KC_PGDN,  KC_P1,    KC_P2,    KC_P3,    KC_PPLS,
         KC_F13,  KC_A,     KC_O,     KC_E,     KC_U,     KC_I,     KC_D,     KC_H,     KC_T,     KC_N,     KC_S,  KC_MINS,              KC_ENT,             KC_HOME,  KC_P4,    KC_P5,    KC_P6,
-       MO(WIN_SHIFT),            KC_QUOT,     KC_Q,     KC_J,     KC_K,     KC_X,     KC_B,     KC_M,     KC_W,  KC_V,   KC_Z,              MO(WIN_SHIFT),  KC_F14,              KC_P7,    KC_P8,    KC_P9,    KC_PENT,
+       TG(WIN_SHIFT),            KC_QUOT,     KC_Q,     KC_J,     KC_K,     KC_X,     KC_B,     KC_M,     KC_W,  KC_V,   KC_Z,              TG(WIN_SHIFT),  KC_F14,              KC_P7,    KC_P8,    KC_P9,    KC_PENT,
         KC_F15,  KC_LALT,  KC_LCTL,                                KC_SPC,                                 KC_RCTL,  KC_RALT, KC_F16,  KC_LWIN,  KC_APP,  MO(WIN_FN),  KC_P0,              KC_PDOT         ),
 
     /* ---shift layer---*/
-    
+     
     [WIN_SHIFT] = LAYOUT_104_ansi(
         _______,   _______,    _______,    _______,    _______,    _______,    _______,    _______,    _______,    _______,    _______,   _______,     _______,   KC_D,  RGB_MOD,  KC_DEL,  _______,  _______,  LWIN(KC_L),  KC_ENT,
-        KC_TILDE,   KC_PERCENT,     KC_7,     KC_5,     KC_3,     KC_1,     KC_9,     KC_0,     KC_2,     KC_4,     KC_6,     KC_8,    KC_GRAVE,   KC_BSPC,            KC_PGUP,  KC_NUM,   KC_PSLS,  KC_PAST,  KC_PMNS,
-        KC_TAB,   KC_SCLN,     KC_COMM,     KC_DOT,     KC_P,     KC_Y,     KC_F,     KC_G,     KC_C,     KC_R,     KC_L,     KC_QUESTION,    KC_AT,  KC_BSLS,            KC_PGDN,  KC_P1,    KC_P2,    KC_P3,    KC_PPLS,
-        KC_F13,  KC_A,     KC_O,     KC_E,     KC_U,     KC_I,     KC_D,     KC_H,     KC_T,     KC_N,     KC_S,  KC_MINS,              KC_ENT,             KC_HOME,  KC_P4,    KC_P5,    KC_P6,
-        _______,            KC_QUOT,     KC_Q,     KC_J,     KC_K,     KC_X,     KC_B,     KC_M,     KC_W,  KC_V,   KC_Z,              _______,  KC_F14,              KC_P7,    KC_P8,    KC_P9,    KC_PENT,
+        KC_TILDE,   KC_PERCENT,     KC_7,     KC_5,     KC_3,     KC_1,     KC_9,     KC_0,     KC_2,     KC_4,     KC_6,     KC_8,    KC_GRAVE,   _______,    _______,  _______,   KC_LPRN,  KC_RPRN,  KC_DOLLAR,
+        _______,   KC_COLON,     KC_LEFT_ANGLE_BRACKET,  KC_RIGHT_ANGLE_BRACKET,     LSFT(KC_P),     LSFT(KC_Y),     LSFT(KC_F),     LSFT(KC_G),     LSFT(KC_C),     LSFT(KC_R),     LSFT(KC_L),     KC_QUESTION,  KC_CIRCUMFLEX,  KC_PIPE,   KC_PGDN,  LSFT(KC_A),    LSFT(KC_B),    LSFT(KC_C),    KC_COMMA,
+        _______,  LSFT(KC_A),     LSFT(KC_O),     LSFT(KC_E),     LSFT(KC_U),     LSFT(KC_I),    LSFT(KC_D),     LSFT(KC_H),    LSFT(KC_T),     LSFT(KC_N),     LSFT(KC_S),  KC_UNDERSCORE,   _______,             _______,  LSFT(KC_D),    LSFT(KC_E),    LSFT(KC_F),
+        _______,            KC_DOUBLE_QUOTE,     LSFT(KC_Q),     LSFT(KC_J),     LSFT(KC_K),     LSFT(KC_X),     LSFT(KC_B),     LSFT(KC_M),     LSFT(KC_W),  LSFT(KC_V),   LSFT(KC_Z),          _______,  KC_F14,              KC_P7,    KC_P8,    KC_P9,    KC_PENT,
         KC_F15,  KC_LALT,  KC_LCTL,                                KC_SPC,                                 KC_RCTL,  KC_RALT, KC_F16,  KC_LWIN,  KC_APP,  MO(WIN_FN),  KC_P0,              KC_PDOT         ),
 
 
